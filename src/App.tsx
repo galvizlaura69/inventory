@@ -1,12 +1,17 @@
-import { FC } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from "./pages/Login";
+import Register from './pages/Register';
+import Home from './pages/Home';
 
-import './style.css';
-
-export const App: FC<{ name: string }> = ({ name }) => {
+const App = () => {
   return (
-    <div>
-      <h1>Hello {name}!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+        <BrowserRouter>
+          <Routes>
+              <Route  path="/" element={<Login />} />
+              <Route  path="/register" element={<Register />} />
+              <Route  path="/home" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
   );
-};
+}
+export default App;

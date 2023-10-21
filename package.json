@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@material-tailwind/react": "^2.1.4",
     "@types/react": "18.2.31",
     "@types/react-dom": "18.2.14",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^6.17.0",
     "typescript": "^5.2.2"
   },
   "scripts": {
@@ -16,7 +18,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "tailwindcss": "^3.3.3"
   },
   "browserslist": {
     "production": [
