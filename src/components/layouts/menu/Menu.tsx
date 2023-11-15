@@ -1,12 +1,18 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation , useNavigate } from "react-router-dom";
 import "./Menu.css";
 
 const Menu = () => {
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isClientsRoute = location.pathname.includes("/clients");
-  
+
+  const handleCloseSesion = async () => {
+    navigate('/');
+
+  };
+
   return (
     <div className="container_menu">
       <NavLink to="/users" className={({ isActive }) => isActive ? 'activeBtn' : 'button-menu'}>
@@ -26,7 +32,7 @@ const Menu = () => {
       <NavLink to="/products" className={({ isActive }) => isActive ? 'activeBtn' : 'button-menu'}>
         PRODUCTOS
       </NavLink>
-      <button className="button-menu">X</button>
+      <button className="button-menu" onClick={() => handleCloseSesion()}>X</button>
     </div>
   );
 };
