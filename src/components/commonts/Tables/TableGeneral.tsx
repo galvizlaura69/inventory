@@ -1,4 +1,6 @@
 import { DataGrid, esES } from '@mui/x-data-grid';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faPencil, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const TableGeneral = ({ columns, rows, handleEdit, handleView, handleTrash, editRow, trashRow }) => {
 
@@ -10,16 +12,16 @@ const TableGeneral = ({ columns, rows, handleEdit, handleView, handleTrash, edit
       renderCell: (params) => (
         <div className='items-center'>
           <button className='mr-2' onClick={() => handleView(params)}>
-            V
+            <FontAwesomeIcon icon={faEye} className="w-4 h-4 mr-2" />
           </button>
           {editRow &&
             <button className='mr-2' onClick={() => handleEdit(params)}>
-              E
+              <FontAwesomeIcon icon={faPencil} className="w-4 h-4 mr-2" />
             </button>
           }
           {trashRow &&
             <button onClick={() => handleTrash(params)}>
-              B
+              <FontAwesomeIcon icon={faTrash} className="w-4 h-4" />
             </button>
           }
         </div>

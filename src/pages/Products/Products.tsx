@@ -2,9 +2,22 @@ import TableGeneral from "../../components/commonts/Tables/TableGeneral";
 const Products = () => {
 
   const columnsUsers = [
-    { field: 'name', headerName: 'Nombre', width: 250 },
-    { field: 'document', headerName: 'Documento', width: 230 },
-    { field: 'rol', headerName: 'Role', width: 230 },
+    { field: 'name', headerName: 'Nombre Producto', width: 250 },
+    { field: 'cantProduct', headerName: 'Cantidad Producto', width: 230 },
+    { field: 'price', headerName: 'Precio unidad', width: 230 },
+    { field: 'proveedor', headerName: 'Proveedor', width: 230 },
+    { field: 'categorie', headerName: 'Categoria', width: 230 },
+  ];
+
+  const rowsUsers = [
+    { id: 1, name: 'Producto A', cantProduct: 10, price: 100, proveedor: 'Proveedor X', categorie: 'Categoria 1' },
+    { id: 2, name: 'Producto B', cantProduct: 20, price: 150, proveedor: 'Proveedor Y', categorie: 'Categoria 2' },
+    { id: 3, name: 'Producto C', cantProduct: 15, price: 120, proveedor: 'Proveedor Z', categorie: 'Categoria 1' },
+    { id: 4, name: 'Producto D', cantProduct: 12, price: 130, proveedor: 'Proveedor X', categorie: 'Categoria 2' },
+    { id: 5, name: 'Producto A', cantProduct: 10, price: 100, proveedor: 'Proveedor X', categorie: 'Categoria 1' },
+    { id: 6, name: 'Producto B', cantProduct: 20, price: 150, proveedor: 'Proveedor Y', categorie: 'Categoria 2' },
+    { id: 7, name: 'Producto C', cantProduct: 15, price: 120, proveedor: 'Proveedor Z', categorie: 'Categoria 1' },
+    { id: 8, name: 'Producto D', cantProduct: 12, price: 130, proveedor: 'Proveedor X', categorie: 'Categoria 2' },
   ];
 
   const handleView = (params) => {
@@ -29,7 +42,7 @@ const Products = () => {
       <div>
         <TableGeneral
           columns={columnsUsers}
-          rows=""
+          rows={rowsUsers}
           editRow
           trashRow
           handleEdit={handleEdit}
