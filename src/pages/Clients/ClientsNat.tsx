@@ -3,19 +3,20 @@ import TableGeneral from "../../components/commonts/Tables/TableGeneral";
 const ClientsNat = () => {
 
   const columnsClientsNat = [
-    { field: 'name', headerName: 'Nombre', width: 250 },
+    { field: 'name', headerName: 'Nombre', width: 200 },
+    { field: 'lastname', headerName: 'Apellido', width: 230 },
     { field: 'document', headerName: 'Documento', width: 230 },
-    { field: 'rol', headerName: 'Rol', width: 230 },
-    { field: 'correo', headerName: 'Correo electronico', width: 230 },
+    { field: 'phone', headerName: 'Celular', width: 230 },
+    { field: 'email', headerName: 'Correo electronico', width: 230 },
   ];
 
   const rowsClientsNat = [
-    { id: 1, name: 'Laura', document: '12345678', rol: 'Admin' },
-    { id: 2, name: 'Carlos', document: '87654321', rol: 'User' },
-    { id: 3, name: 'Ana', document: '13579246', rol: 'Admin' },
-    { id: 1, name: 'Laura', document: '12345678', rol: 'Admin' },
-    { id: 2, name: 'Carlos', document: '87654321', rol: 'User' },
-    { id: 3, name: 'Ana', document: '13579246', rol: 'Admin' },
+    { id: 1, name: 'Laura', lastname: 'Gomez', document: '12345678', phone: '555-1234', email: 'laura@example.com' },
+    { id: 2, name: 'Carlos', lastname: 'Perez', document: '87654321', phone: '555-5678', email: 'carlos@example.com' },
+    { id: 3, name: 'Laura', lastname: 'Gomez', document: '12345678', phone: '555-1234', email: 'laura@example.com' },
+    { id: 4, name: 'Carlos', lastname: 'Perez', document: '87654321', phone: '555-5678', email: 'carlos@example.com' },
+    { id: 5, name: 'Laura', lastname: 'Gomez', document: '12345678', phone: '555-1234', email: 'laura@example.com' },
+    { id: 6, name: 'Carlos', lastname: 'Perez', document: '87654321', phone: '555-5678', email: 'carlos@example.com' },
     // ... más filas ...
   ];
 

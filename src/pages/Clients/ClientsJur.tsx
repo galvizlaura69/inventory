@@ -4,11 +4,21 @@ const ClientsJur = () => {
 
 
   const columnsClientsJur= [
-    { field: 'name', headerName: 'Nombre', width: 250 },
-    { field: 'document', headerName: 'Documento', width: 230 },
-    { field: 'rol', headerName: 'Role', width: 230 },
+    { field: 'name', headerName: 'Nombre Empresa', width: 200 },
+    { field: 'nameRepresent', headerName: 'Representante', width: 200 },
+    { field: 'document', headerName: 'Nit empresa', width: 230 },
+    { field: 'phone', headerName: 'Celular', width: 230 },
+    { field: 'email', headerName: 'Correo electronico', width: 230 },
   ];
-   
+
+  const rowsClientsJur = [
+    { id: 1, name: 'Empresa A', nameRepresent: 'Juan Perez', document: '123456789', phone: '555-1234', email: 'empresaA@example.com' },
+    { id: 2, name: 'Empresa B', nameRepresent: 'Maria Lopez', document: '987654321', phone: '555-5678', email: 'empresaB@example.com' },
+    { id: 3, name: 'Empresa C', nameRepresent: 'Maria Lopez', document: '987654321', phone: '555-5678', email: 'empresaB@example.com' },
+    { id: 4, name: 'Empresa D', nameRepresent: 'Maria Lopez', document: '987654321', phone: '555-5678', email: 'empresaB@example.com' },
+    { id: 5, name: 'Empresa E', nameRepresent: 'Maria Lopez', document: '987654321', phone: '555-5678', email: 'empresaB@example.com' },
+  ];
+
 
   const handleView = (params) => {
     console.log("Ver registro:", params.row);
@@ -32,7 +42,7 @@ const ClientsJur = () => {
       <div>
         <TableGeneral
           columns={columnsClientsJur}
-          rows=""
+          rows={rowsClientsJur}
           editRow
           trashRow
           handleEdit={handleEdit}

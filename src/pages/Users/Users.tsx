@@ -15,9 +15,9 @@ const Users = () => {
     { id: 1, name: 'Laura', document: '12345678', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
     { id: 2, name: 'Carlos', document: '87654321', rol: 'User', email: "galviz@gmail.com", phone: '31455585 ' },
     { id: 3, name: 'Ana', document: '13579246', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
-    { id: 1, name: 'Laura', document: '12345678', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
-    { id: 2, name: 'Carlos', document: '87654321', rol: 'User', email: "galviz@gmail.com", phone: '31455585 ' },
-    { id: 3, name: 'Ana', document: '13579246', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 4, name: 'Laura', document: '12345678', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 5, name: 'Carlos', document: '87654321', rol: 'User', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 6, name: 'Ana', document: '13579246', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
   ];
 
   const handleView = (params) => {
