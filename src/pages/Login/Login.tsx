@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <div className="flex h-full w-full items-center justify-center text-white  img_fondo">
       <div className='w-3/6' >
-        <p className='message_login' >Siempre pensando en el futuro!</p>
+        <p className='message_login' >¡Siempre pensando en el futuro!</p>
         <span className='message_login'>Lo hacemos lo posible por ti.</span>
       </div>
       <div className='container_form '>
