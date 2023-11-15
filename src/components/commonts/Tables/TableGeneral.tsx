@@ -7,20 +7,19 @@ const TableGeneral = ({ columns, rows, handleEdit, handleView, handleTrash, edit
     {
       field: "actions",
       headerName: "Acciones",
-      flex: 1,
       renderCell: (params) => (
-        <div>
-          <button onClick={() => handleView(params)}>
-            Ver
+        <div className='items-center'>
+          <button className='mr-2' onClick={() => handleView(params)}>
+            V
           </button>
           {editRow &&
-            <button onClick={() => handleEdit(params)}>
-              Editar
+            <button className='mr-2' onClick={() => handleEdit(params)}>
+              E
             </button>
           }
           {trashRow &&
             <button onClick={() => handleTrash(params)}>
-              Borrar
+              B
             </button>
           }
         </div>
@@ -29,7 +28,7 @@ const TableGeneral = ({ columns, rows, handleEdit, handleView, handleTrash, edit
   ];
 
   return (
-    <div style={{ height: 380, width: '100%' }}>
+    <div>
       <DataGrid
         columns={updatedColumns}
         rows={rows}
@@ -37,10 +36,10 @@ const TableGeneral = ({ columns, rows, handleEdit, handleView, handleTrash, edit
         localeText={esES.components.MuiDataGrid.defaultProps.localeText}
         initialState={{
           pagination: {
-            paginationModel: { page: 0, pageSize: 5 },
+            paginationModel: { page: 0, pageSize: 6 },
           },
         }}
-        pageSizeOptions={[5]}
+        pageSizeOptions={[6]}
       />
     </div>
   );

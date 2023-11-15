@@ -6,7 +6,18 @@ const Users = () => {
   const columnsUsers = [
     { field: 'name', headerName: 'Nombre', width: 250 },
     { field: 'document', headerName: 'Documento', width: 230 },
-    { field: 'rol', headerName: 'Role', width: 230 },
+    { field: 'rol', headerName: 'Rol', width: 230 },
+    { field: 'email', headerName: 'Correo electronico', width: 230 },
+    { field: 'phone', headerName: 'Telefono', width: 230 },
+  ];
+
+  const rowsUsers = [
+    { id: 1, name: 'Laura', document: '12345678', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 2, name: 'Carlos', document: '87654321', rol: 'User', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 3, name: 'Ana', document: '13579246', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 1, name: 'Laura', document: '12345678', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 2, name: 'Carlos', document: '87654321', rol: 'User', email: "galviz@gmail.com", phone: '31455585 ' },
+    { id: 3, name: 'Ana', document: '13579246', rol: 'Admin', email: "galviz@gmail.com", phone: '31455585 ' },
   ];
 
   const handleView = (params) => {
@@ -31,7 +42,7 @@ const Users = () => {
       <div>
         <TableGeneral
           columns={columnsUsers}
-          rows=""
+          rows={rowsUsers}
           editRow
           trashRow
           handleEdit={handleEdit}
