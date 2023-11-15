@@ -1,14 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Menu.css";
 
 const Menu = () => {
+
+  const location = useLocation();
+
+  const isClientsRoute = location.pathname.includes("/clients");
+  
   return (
     <div className="container_menu">
       <NavLink to="/users" className={({ isActive }) => isActive ? 'activeBtn' : 'button-menu'}>
         USUARIOS
       </NavLink>
       <div className="dropdown">
-        <button className="dropbtn">CLIENTES</button>
+        <button className={isClientsRoute ? 'dropbtn-active' : 'dropbtn'}>CLIENTES</button>
         <div className="dropdown-content">
           <NavLink to="/clients/nat" className={({ isActive }) => isActive ? 'activeBtn' : 'button-menu'}>
             Cliente Natural

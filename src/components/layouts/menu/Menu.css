@@ -22,8 +22,8 @@
   display: inline-block;
 }
 
-.dropbtn {
-  /* Estilos para el botón principal del menú desplegable */
+.dropbtn-active {
+  color: orange; 
 }
 
 .dropdown-content {
