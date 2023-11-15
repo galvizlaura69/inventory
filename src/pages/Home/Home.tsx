@@ -1,8 +1,8 @@
 const Home = () => {
 
   return (
-    <div className="relative flex h-full items-center justify-center">
-      <p>Hola</p>
+    <div className="min-h-screen flex w-full relative bg-blue-400">
+      <p>Hola hahahhaha</p>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const Login = () => {
     if (emailValue === email && passwordValue === pass.toString()) {
       console.log('Inicio de sesión exitoso');
       setRedirectToHome(true);
-      navigate('/home');
+      navigate('/users');
     } else {
       console.log('Credenciales incorrectas');
     }
