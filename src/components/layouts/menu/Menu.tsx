@@ -17,7 +17,7 @@ const Menu = () => {
 
   return (
     <div className="container_menu">
-      <div className="logo-menu"> <img src="" alt="logo" /></div>
+      <div className="logo-menu"> </div>
       <div className="links-menu">
         <NavLink to="/users" className={({ isActive }) => isActive ? 'activeBtn' : 'button-menu'}>
           USUARIOS
