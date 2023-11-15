@@ -1,0 +1,50 @@
+.img_fondo{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/inventory.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container_form{
+  width: 20%;
+  min-width: 280px;
+  height: 55%;
+  border: 1px solid black;
+  border-radius: 16px;
+  background: #0000006e;
+  z-index: 9000;
+  padding: 1.5rem;
+}
+
+.button_login{
+  display: flex;
+  margin: auto;
+  background: orange;
+  padding: 0.4rem 4rem;
+  border-radius: 1.2rem;  
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title_login{
+  color: orange;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.message_login{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.input_login{
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  width: 100%;
+  color: black;
+  margin: 0.5rem  0px 0.5rem 0px;
+}
